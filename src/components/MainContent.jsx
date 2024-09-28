@@ -6,30 +6,33 @@ export const MainContent = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <div className="flex-grow flex justify-center text-white items-center">
-        <div className="flex text-center">
-          <div className="text-left ml-20 my-12">
+      <div className="flex-grow flex justify-center text-white items-center px-4 sm:px-12 lg:px-24">
+        <div className="flex flex-col lg:flex-row text-center lg:text-left items-center justify-between w-full">
+          
+          <div className="lg:w-1/2 my-12 lg:my-0 lg:ml-20">
             <p className="text-lg mt-2">Hi👋, I’m a </p>
-            <p className="text-xl font-bold mt-2 text-[#FFA75B]">
+            <p className="text-2xl lg:text-3xl font-bold mt-2 text-[#FFA75B]">
               Software Developer
             </p>
-            <p className="text-lg mt-2 mb-12">
-              I’m Henry Okoli, a developer dedicated to making the world a{" "}
+            <p className="text-md lg:text-lg mt-2 mb-6 lg:mb-12">
+              I’m Henry Okoli, a developer dedicated to making the world a
               <br />
               better place one line of code at a time.
             </p>
             <a
               href="../public/HENRY-OKOLI.pdf"
               download="HENRY-OKOLI.pdf"
-              className="bg-[#FFA75B] text-white font-bold py-2 px-4 cursor-pointer rounded hover:text-blue-400"
+              className="bg-[#FFA75B] text-white font-bold py-2 px-6 rounded hover:text-blue-400"
             >
               Download My CV 📄
             </a>
           </div>
+
+          
           <img
             src={softwareimage}
             alt="Henry Okoli"
-            className="w-3/6 mb-4 mx-auto transition-transform duration-300 hover:-translate-y-2 rounded-xl"
+            className="w-full sm:w-4/6 lg:w-2/5 mt-8 lg:mt-0 lg:ml-12 transition-transform duration-300 hover:-translate-y-2 rounded-xl object-cover"
           />
         </div>
       </div>

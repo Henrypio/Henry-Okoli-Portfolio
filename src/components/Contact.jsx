@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import Footer from "./Footer";
 import Header from "./Header";
+import support from "../assets/support.png";
 
 const Contact = () => {
   const form = useRef();
@@ -31,12 +32,17 @@ const Contact = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <h2 className="text-4xl text-[#FFA75B] font-bold text-center">
-        Contacts
+      <h2 className="text-3xl sm:text-4xl text-[#FFA75B] font-bold text-center mt-8 mb-6">
+        Contact
       </h2>
-      <main className="flex-grow flex items-center justify-center">
-        <div>
-          <p className="text-white text-2xl text-start mx-36">
+      <main className="flex-grow flex flex-col md:flex-row items-center justify-center px-4">
+        <div className="mb-6 md:mb-0 md:mr-8 flex flex-col items-center">
+          <img
+            src={support}
+            alt="Support"
+            className="bg-black rounded-xl object-cover max-w-xs md:max-w-sm lg:max-w-md"
+          />
+          <p className="text-white text-lg sm:text-xl mt-4 md:mx-0 text-center md:text-left px-4 md:px-0">
             If you have any questions, need help, or just want to say hi, please
             don't hesitate to reach out.
           </p>
@@ -44,7 +50,7 @@ const Contact = () => {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="bg-black shadow-lg rounded-lg p-8 max-w-lg w-full mr-12"
+          className="bg-black shadow-lg rounded-lg p-6 sm:p-8 max-w-lg w-full"
         >
           <input type="hidden" name="to_name" value="Henry" />
           <div className="mb-4">
@@ -87,7 +93,7 @@ const Contact = () => {
             <textarea
               id="message"
               name="message"
-              className="shadow border border-[#FFA75B] rounded w-full py-2 px-3 text-black bg-gray-200"
+              className="shadow border border-[#FFA75B] h-32 rounded w-full py-2 px-3 text-black bg-gray-200"
               required
             ></textarea>
           </div>

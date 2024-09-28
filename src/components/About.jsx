@@ -1,18 +1,22 @@
 import Footer from "./Footer";
 import Header from "./Header";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import Services from "./Services";
 
 const About = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-grow">
-        <h1 className="text-4xl text-center font-bold text-[#FFA75B]">
+      <main className="flex-grow px-4 sm:px-12 lg:px-24">
+        <h1 className="text-3xl sm:text-4xl text-center font-bold text-[#FFA75B] my-8">
           About Me
         </h1>
-        <div className="flex justify-between ml-20 my-12">
-          <div className="w-3/5">
-            <p className="text-lg text-wrap text-white text-left mb-8">
+
+        
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-12">
+          
+          <div className="lg:w-3/5 w-full mb-8 lg:mb-0">
+            <p className="text-md sm:text-lg text-white mb-8">
               I am a driven software developer with a strong focus on building
               visually stunning and responsive web applications. I excel at
               transforming design concepts into pixel-perfect, interactive
@@ -28,38 +32,44 @@ const About = () => {
             </p>
             <a
               href="/contact"
-              className="bg-[#FFA75B] text-white font-bold py-2 px-4 cursor-pointer rounded hover:text-blue-400"
+              className="bg-[#FFA75B] text-white font-bold py-2 px-6 rounded hover:text-blue-400"
             >
               Get in Touch 📩
             </a>
           </div>
-          <div className="mx-24">
-            <i className="fa-solid text-4xl fa-check text-[#FFA75B] mb-4 "></i>
-            <span className="text-white text-lg ">
-              {" "}
-              90% Client Satisfaction
-            </span>
-            <p className="text-[#FFA75B]">
-              -----------------------------------
-            </p>
-            <br />
-            <i className="fa-solid text-4xl fa-check text-[#FFA75B] mb-4"></i>
-            <span className="text-white text-lg">
-              {" "}
-              +3 Years Experience{" "}
-            </span>{" "}
-            <br />
-            <p className="text-[#FFA75B]">
-              -----------------------------------
-            </p>
-            <i className="fa-solid text-4xl fa-check text-[#FFA75B] mb-4"></i>
-            <span className="text-white text-lg"> +12 Completed Projects</span>
-            <p className="text-[#FFA75B]">
-              -----------------------------------
-            </p>
+
+          
+          <div className="lg:ml-24 w-full lg:w-auto text-center lg:text-left">
+            <div className="mb-8">
+              <i className="fa-solid text-4xl fa-check text-[#FFA75B] mb-4"></i>
+              <span className="text-white text-lg block">
+                90% Client Satisfaction
+              </span>
+              <p className="text-[#FFA75B]">---------------------------</p>
+            </div>
+
+            <div className="mb-8">
+              <i className="fa-solid text-4xl fa-check text-[#FFA75B] mb-4"></i>
+              <span className="text-white text-lg block">
+                +3 Years Experience
+              </span>
+              <p className="text-[#FFA75B]">---------------------------</p>
+            </div>
+
+            <div>
+              <i className="fa-solid text-4xl fa-check text-[#FFA75B] mb-4"></i>
+              <span className="text-white text-lg block">
+                +12 Completed Projects
+              </span>
+              <p className="text-[#FFA75B]">---------------------------</p>
+            </div>
           </div>
         </div>
+
+        
+        <Services />
       </main>
+
       <Footer />
     </div>
   );
