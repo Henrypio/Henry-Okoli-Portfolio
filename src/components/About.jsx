@@ -59,7 +59,7 @@ const About = () => {
           </div>
         </div>
 
-        <Services />
+        {/* <Services /> */}
       </main>
 
       <Footer />
