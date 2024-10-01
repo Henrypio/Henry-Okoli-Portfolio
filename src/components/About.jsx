@@ -28,7 +28,7 @@ const About = () => {
               performance, and functionality.
             </p>
             <a
-              href="contact"
+              href="/contact"
               className="bg-[#FFA75B] text-white font-bold py-2 px-6 rounded hover:text-blue-400"
             >
               Get in Touch 📩
