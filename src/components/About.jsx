@@ -1,7 +1,7 @@
 import Footer from "./Footer";
 import Header from "./Header";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import Services from "./Services";
+// import Services from "./Services";
 
 const About = () => {
   return (
@@ -29,7 +29,7 @@ const About = () => {
               performance, and functionality.
             </p>
             <a
-              href="/contact"
+              href="contact"
               className="bg-[#FFA75B] text-white font-bold py-2 px-6 rounded hover:text-blue-400"
             >
               Get in Touch 📩
