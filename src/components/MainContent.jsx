@@ -1,7 +1,6 @@
 import Footer from "./Footer";
 import Header from "./Header";
 import softwareimage from "../assets/software-image.png";
-import { FaEnvelope, FaPhone, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const MainContent = () => {
   return (
@@ -21,7 +20,7 @@ export const MainContent = () => {
               better place one line of code at a time.
             </p>
             <a
-              href="../public/HENRY-OKOLI.pdf"
+              href="../public/HENRY-OKOLI-Resume.pdf"
               download="HENRY-OKOLI.pdf"
               className="bg-[#FFA75B] text-white font-bold py-2 px-6 rounded hover:text-blue-400"
             >
