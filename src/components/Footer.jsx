@@ -12,10 +12,20 @@ const Footer = () => {
         <div className="text-center md:text-left">
           <p className="mb-2">My social media links:</p>
           <div className="flex justify-center md:justify-start space-x-6">
-            <a href="mailto:henrypio21@gmail.com" className="flex items-center">
+            <a
+              href="mailto:henrypio21@gmail.com"
+              className="flex items-center"
+              aria-label="Email Henry Okoli"
+              title="Email me"
+            >
               <FaEnvelope className="text-[#FFA75B]" />
             </a>
-            <a href="tel:+2348065106020" className="flex items-center">
+            <a
+              href="tel:+2348065106020"
+              className="flex items-center"
+              aria-label="Call Henry Okoli"
+              title="Call me"
+            >
               <FaPhone className="text-[#FFA75B]" />
             </a>
             <a
@@ -23,6 +33,8 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center"
+              aria-label="Henry Okoli's GitHub"
+              title="GitHub profile"
             >
               <FaGithub className="text-[#FFA75B]" />
             </a>
@@ -31,6 +43,8 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center"
+              aria-label="Henry Okoli's LinkedIn"
+              title="LinkedIn profile"
             >
               <FaLinkedin className="text-[#FFA75B]" />
             </a>

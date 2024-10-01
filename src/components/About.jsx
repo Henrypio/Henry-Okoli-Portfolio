@@ -1,7 +1,18 @@
+import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
-import { Link } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+
+const Statistic = ({ label, value }) => (
+  <div className="mb-8">
+    <i
+      className="fa-solid text-4xl fa-check text-[#FFA75B] mb-4"
+      aria-hidden="true"
+    ></i>
+    <span className="text-white text-lg">{value}</span>
+    <p className="text-[#FFA75B]">-------------------------------</p>
+  </div>
+);
 
 const About = () => {
   return (
@@ -36,29 +47,15 @@ const About = () => {
             </Link>
           </div>
 
-          <div className="lg:ml-24 lg:w-auto text-center lg:text-left ">
-            <div className="mb-8">
-              <i className="fa-solid text-4xl fa-check text-[#FFA75B] mb-4"></i>
-              <span className="text-white text-lg">
-                90% Client Satisfaction
-              </span>
-              <p className="text-[#FFA75B]">-------------------------------</p>
-            </div>
-
-            <div className="mb-8">
-              <i className="fa-solid text-4xl fa-check text-[#FFA75B] mb-4"></i>
-              <span className="text-white text-lg">+3 Years Experience</span>
-              <p className="text-[#FFA75B]">-------------------------------</p>
-            </div>
-
-            <div>
-              <i className="fa-solid text-4xl fa-check text-[#FFA75B] mb-4"></i>
-              <span className="text-white text-lg">+12 Completed Projects</span>
-              <p className="text-[#FFA75B]">-------------------------------</p>
-            </div>
+          <div className="lg:ml-24 lg:w-auto text-center lg:text-left">
+            <Statistic
+              label="Client Satisfaction"
+              value="90% Client Satisfaction"
+            />
+            <Statistic label="Experience" value="+3 Years Experience" />
+            <Statistic label="Projects" value="+12 Completed Projects" />
           </div>
         </div>
-
       </main>
 
       <Footer />
