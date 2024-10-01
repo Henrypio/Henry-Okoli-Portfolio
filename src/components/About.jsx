@@ -1,5 +1,6 @@
 import Footer from "./Footer";
 import Header from "./Header";
+import { Link } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const About = () => {
@@ -27,12 +28,12 @@ const About = () => {
               delivering high-impact solutions that balance aesthetics,
               performance, and functionality.
             </p>
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="bg-[#FFA75B] text-white font-bold py-2 px-6 rounded hover:text-blue-400"
             >
               Get in Touch 📩
-            </a>
+            </Link>
           </div>
 
           <div className="lg:ml-24 lg:w-auto text-center lg:text-left ">
