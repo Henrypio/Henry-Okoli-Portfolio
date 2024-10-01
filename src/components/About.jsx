@@ -1,7 +1,6 @@
 import Footer from "./Footer";
 import Header from "./Header";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-// import Services from "./Services";
 
 const About = () => {
   return (
@@ -59,7 +58,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* <Services /> */}
       </main>
 
       <Footer />
