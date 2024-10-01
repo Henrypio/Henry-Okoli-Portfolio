@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    },
+    {
+      "src": "/404",
+      "dest": "/404.js"
+    },
+    {
+      "src": "/(.*)",
+      "status": 404,
+      "headers": {
+        "x-custom-header": "This is a custom header"
+      },
+      "dest": "/404.js"
+    }
+  ],
+  "fallback": {
+    "src": "/(.*)",
+    "dest": "/404.js"
+  }
+}
