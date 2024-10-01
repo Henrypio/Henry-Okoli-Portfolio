@@ -12,7 +12,7 @@ const Skills = () => {
           Skills
         </h2>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 mt-4 mx-4 sm:mx-8 lg:mx-20">
+        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 mb-12 lg:grid-cols-10 gap-6  mt-4 mx-4 sm:mx-8 lg:mx-20">
           {/* Skill Item */}
           <div className="flex flex-col items-center transition-transform duration-300 hover:-translate-y-2">
             <i className="fab fa-html5 text-6xl mb-2 text-[#FFA75B] "></i>

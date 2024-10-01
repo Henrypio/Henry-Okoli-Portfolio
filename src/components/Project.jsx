@@ -19,6 +19,13 @@ const projects = [
     link: "https://todo-custom-api-app.vercel.app",
   },
   {
+    title: "Farmlink",
+    description:
+      "This project was developed through collaboration among multiple teams, including UI/UX, frontend, mobile, and backend developers, who came together to bring this idea to life.",
+    technologies: ["React", "Tailwind", "Redux", "CSS"],
+    link: "https://farmlink-fe-int.vercel.app/",
+  },
+  {
     title: "User Dashboard With User Authentication",
     description:
       "User dashboard with firebase authentication for signup and login process,on successful login the app routes to the dashboard screen.",
@@ -39,6 +46,13 @@ const projects = [
     technologies: ["React", "React Router", "styled component"],
     link: "https://landing-page-design-livid.vercel.app/",
   },
+  {
+    title: "Country API Country",
+    description:
+      "Using an API to get various details of countries and display them.",
+    technologies: ["Javascript", "CSS", "HTML"],
+    link: "https://country-api-display-5oxh.vercel.app/",
+  },
 ];
 
 const Project = () => {
@@ -46,10 +60,10 @@ const Project = () => {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow container mx-auto  p-4">
-        <h1 className="text-4xl font-bold text-center text-[#FFA75B]">
+        <h1 className="text-4xl font-bold text-center text-[#FFA75B] mb-4">
           Projects
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-15 md:mx-20 lg:mx-20">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}

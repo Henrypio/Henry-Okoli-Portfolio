@@ -1,6 +1,7 @@
 import Footer from "./Footer";
 import Header from "./Header";
 import softwareimage from "../assets/software-image.png";
+import { FaEnvelope, FaPhone, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const MainContent = () => {
   return (
@@ -8,7 +9,7 @@ export const MainContent = () => {
       <Header />
       <div className="flex-grow flex justify-center text-white items-center px-4 sm:px-12 lg:px-24">
         <div className="flex flex-col lg:flex-row text-center lg:text-left items-center justify-between w-full">
-          <div className="lg:w-1/2 my-12 lg:my-0 lg:ml-20">
+          <div className="lg:w-1/2 my-12  lg:my-0 lg:">
             <p className="text-lg mt-2">Hi👋, I’m a </p>
             <p className="text-2xl lg:text-3xl font-bold mt-2 text-[#FFA75B]">
               Software Developer
@@ -26,6 +27,7 @@ export const MainContent = () => {
             >
               Download My CV 📄
             </a>
+            
           </div>
 
           <img
@@ -35,6 +37,7 @@ export const MainContent = () => {
           />
         </div>
       </div>
+      
       <Footer />
     </div>
   );

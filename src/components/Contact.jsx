@@ -35,14 +35,14 @@ const Contact = () => {
       <h2 className="text-3xl sm:text-4xl text-[#FFA75B] font-bold text-center mt-8 mb-6">
         Contact
       </h2>
-      <main className="flex-grow flex flex-col md:flex-row items-center justify-center px-4">
+      <main className="flex-grow flex flex-col md:flex-row items-center justify-center px-4 mb-12">
         <div className="mb-6 md:mb-0 md:mr-8 flex flex-col items-center">
           <img
             src={support}
             alt="Support"
             className="bg-black rounded-xl object-cover max-w-xs md:max-w-sm lg:max-w-md"
           />
-          <p className="text-white text-lg sm:text-xl mt-4 md:mx-0 text-center md:text-left px-4 md:px-0">
+          <p className="text-white text-lg sm:text-xl mt-4 md:mx-24 text-center md:text-left px-4 md:px-0">
             If you have any questions, need help, or just want to say hi, please
             don't hesitate to reach out.
           </p>
@@ -50,7 +50,7 @@ const Contact = () => {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="bg-black shadow-lg rounded-lg p-6 sm:p-8 max-w-lg w-full"
+          className="bg-black shadow-lg rounded-lg p-6 sm:p-8 max-w-lg w-full mr-12"
         >
           <input type="hidden" name="to_name" value="Henry" />
           <div className="mb-4">
