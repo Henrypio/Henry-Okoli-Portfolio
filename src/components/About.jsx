@@ -18,12 +18,12 @@ const About = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-grow px-4 sm:px-12 md:mx-14 lg:mx-2 lg:px-24">
+      <main className="flex-grow px-4 sm:px-12 md:ml-14 lg:mx-2 lg:px-24">
         <h1 className="text-3xl sm:text-4xl text-center font-bold text-[#FFA75B] my-8">
           About Me
         </h1>
 
-        <div className="flex flex-col lg:flex-row justify-between  md:items-start lg:items-center mb-12">
+        <div className="flex flex-col lg:flex-row justify-between  md:items-center lg:items-center mb-12">
           <div className="lg:w-3/5 w-full mb-8 lg:mb-0">
             <p className="text-md sm:text-lg text-white mb-8">
               I am a driven software developer with a strong focus on building
@@ -47,7 +47,7 @@ const About = () => {
             </Link>
           </div>
 
-          <div className=" lg:ml-24 lg:w-auto text-center lg:text-left">
+          <div className=" lg:ml-24 lg:w-auto md:w-full text-center lg:text-left">
             <Statistic
               label="Client Satisfaction"
               value="90% Client Satisfaction"
