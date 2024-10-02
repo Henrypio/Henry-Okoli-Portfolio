@@ -24,9 +24,7 @@ const Contact = () => {
         },
         (error) => {
           console.log(error.text);
-          alert(
-            "Failed to send the message. Please check your input and try again."
-          );
+          alert("Failed to send the message. Please check your input and try again.");
         }
       );
   };
@@ -37,7 +35,7 @@ const Contact = () => {
       <h2 className="text-3xl sm:text-4xl text-[#FFA75B] font-bold text-center mt-8 mb-6">
         Contact
       </h2>
-      <main className="flex-grow flex flex-col md:flex-row items-center justify-center px-4 mb-12">
+      <main className="flex-grow flex flex-col md:flex-col lg:flex-row items-center justify-center px-4 mb-12">
         <section className="mb-6 md:mb-0 md:mr-8 flex flex-col items-center">
           <img
             src={support}
@@ -68,6 +66,7 @@ const Contact = () => {
                 type="text"
                 id="from_name"
                 name="from_name"
+                placeholder="enter your name here"
                 className="shadow border border-[#FFA75B] rounded w-full py-2 px-3 text-black bg-gray-200"
                 required
                 aria-label="Your Name"
@@ -84,6 +83,7 @@ const Contact = () => {
                 type="email"
                 id="from_email"
                 name="from_email"
+                placeholder="enter your email here"
                 className="shadow border border-[#FFA75B] rounded w-full py-2 px-3 text-black bg-gray-200"
                 required
                 aria-label="Your Email"
@@ -99,6 +99,7 @@ const Contact = () => {
               <textarea
                 id="message"
                 name="message"
+                placeholder="enter your message here"
                 className="shadow border border-[#FFA75B] h-32 rounded w-full py-2 px-3 text-black bg-gray-200"
                 required
                 aria-label="Your Message"
