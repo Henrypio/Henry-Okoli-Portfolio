@@ -24,7 +24,9 @@ const Contact = () => {
         },
         (error) => {
           console.log(error.text);
-          alert("Failed to send the message. Please check your input and try again.");
+          alert(
+            "Failed to send the message. Please check your input and try again."
+          );
         }
       );
   };
@@ -51,7 +53,7 @@ const Contact = () => {
         <section
           ref={form}
           onSubmit={sendEmail}
-          className="bg-black shadow-lg rounded-lg p-6 sm:p-8 max-w-lg w-full mr-12"
+          className="bg-black shadow-lg rounded-lg p-6 sm:p-8  max-w-lg w-full"
         >
           <form>
             <input type="hidden" name="to_name" value="Henry" />
